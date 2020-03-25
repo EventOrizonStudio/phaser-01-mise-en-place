@@ -7,6 +7,18 @@
 	<body>
 		<script src="https://cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.min.js"></script>
 		<!-- On met une 2em balise pour écrire notre programme. -->
-		<script></script>
+		<script>
+			let config = {
+				type: Phaser.AUTO, // Définit le moteur graphique à utilisé CANVAS, WEBGL ou AUTO.
+				width: 800, // largeur de l'écran de jeu.
+				height: 600, // hauteur de l'écran de jeu.
+				physics: {}, // définit la physique utiliser par phaser.
+				scene: {
+					preload: preload,
+					create: create,
+				}// configure la scene utiliser pour phaser.
+			};
+			let game = new Phaser.Game(config); // On déclare une nouvelle instance de Phaser
+		</script>
 	</body>
 </html>
