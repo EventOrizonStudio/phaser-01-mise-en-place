@@ -19,6 +19,10 @@
 				}// configure la scene utiliser pour phaser.
 			};
 			let game = new Phaser.Game(config); // On déclare une nouvelle instance de Phaser
+			function preload(){
+				this.load.image('sky', 'https://labs.phaser.io/assets/skies/space2.png ');
+				this.load.image('atari', 'https://labs.phaser.io/assets/sprites/atari800xl.png');
+			}
 		</script>
 	</body>
 </html>
